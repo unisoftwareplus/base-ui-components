@@ -27,7 +27,7 @@
 
 <script>
 // eslint-disable-next-line import/extensions
-import Hls from 'hls.js/dist/hls.light.js';
+import Hls from 'hls.js/dist/hls.light.mjs';
 import BaseIcon from '@/components/BaseIcon/BaseIcon';
 import i18n from '../../mixins/i18n';
 

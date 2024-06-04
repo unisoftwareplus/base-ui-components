@@ -228,12 +228,12 @@
 
 <script>
 import ClickOutside from 'vue-click-outside';
-import DatePicker from 'vue2-datepicker';
+import DatePicker from 'vue-datepicker-next';
 import { debounce } from '@/utils/utils';
 
-import en from 'vue2-datepicker/locale/en';
-import de from 'vue2-datepicker/locale/de';
-import fr from 'vue2-datepicker/locale/fr';
+import en from 'vue-datepicker-next/locale/en';
+import de from 'vue-datepicker-next/locale/de';
+import fr from 'vue-datepicker-next/locale/fr';
 
 import BaseInput from '@/components/BaseInput/BaseInput';
 import BaseIcon from '../BaseIcon/BaseIcon';
@@ -1405,7 +1405,7 @@ export default {
     /**
      * if input was just a single string return that otherwise
      * only return the properties provided by external input
-     * if input is empty set value to empty string instead of null (default vue2-datepicker)
+     * if input is empty set value to empty string instead of null (default vue-datepicker-next)
      * @returns {string | Object}
      */
     getInputData() {

@@ -43,10 +43,11 @@
               name="optionButtons"
               :submit-action="submitAction">
               <!-- default iterate through optionsConfig array -->
-              <template v-for="action of actionButtonsConfig">
+              <template
+                v-for="action of actionButtonsConfig"
+                :key="action.text">
                 <BaseButton
                   v-if="action.display === 'top' || action.display === 'all' || !action.display"
-                  :key="action.text"
                   :text="getI18nString(action.text)"
                   :icon="action.icon"
                   :has-background-color="false"

@@ -25,6 +25,9 @@ module.exports = {
   },
   // add your custom rules here
   rules: {
+    'vue/no-v-for-template-key-on-child': ['error'],
+    'vue/no-v-for-template-key': ['off'],
+    'linebreak-style': ['error', 'windows'],
     // disallow reassignment of function parameters
     // disallow parameter object manipulation except for specific exclusions
     'no-param-reassign': ['error', {

@@ -7,9 +7,9 @@
       {{ label }}
     </legend>
     <template
-      v-for="(option, index) in options">
+      v-for="(option, index) in options"
+      :key="option.value + 'label'">
       <label
-        :key="option.value + 'label'"
         :for="optionIds[index]"
         :class="['base-switch-button__label',
                  { 'base-switch-button__label__active': option.value === selectedOption }]">
